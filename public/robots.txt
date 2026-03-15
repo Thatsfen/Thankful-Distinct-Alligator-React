@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://thankful-distinct-alligator-c5w1xk.teleporthq.app/sitemap.xml
