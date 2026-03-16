@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -6,13 +6,17 @@ import { Helmet } from 'react-helmet'
 import Navigation from '../components/navigation'
 import Footer from '../components/footer'
 import './home.css'
+import pecu from '../assets/pecu.jpg'
+import Ppecu from '../assets/Ppecu.jpg'
 
 const Home = (props) => {
+  const [showVideo, setShowVideo] = useState(false)
+
   return (
     <div className="home-container1">
       <Helmet>
-        <title>Thankful Distinct Alligator</title>
-        <meta property="og:title" content="Thankful Distinct Alligator" />
+        <title>Ataneh Peculiar</title>
+        <meta property="og:title" content="Ataneh Peculiar" />
         <link
           rel="canonical"
           href="https://thankful-distinct-alligator-c5w1xk.teleporthq.app/"
@@ -41,7 +45,7 @@ const Home = (props) => {
               <span>Media Personality &amp; Social Entrepreneur</span>
             </div>
             <h1 className="hero-title">
-              Shaping Narratives, Empowering Communities.
+              Telling stories, Empowering Communities.
             </h1>
             <p className="hero-subtitle">
               Harnessing the power of media to drive sustainable social change
@@ -74,10 +78,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="hero-intro-portrait">
-            <img
-              src="https://images.pexels.com/photos/2041396/pexels-photo-2041396.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-              alt="Portrait of Destiny Vista"
-            />
+            <img src={pecu} alt="Ataneh Peculiar Portrait" />
           </div>
         </div>
       </section>
@@ -111,11 +112,9 @@ const Home = (props) => {
               Leading dialogues on international platforms about economic equity
               and youth representation.
             </p>
-            <a href="#">
-              <div className="btn-link">
-                <span>Watch Reel</span>
-              </div>
-            </a>
+            <div onClick={() => setShowVideo(true)} className="btn-link">
+              <span>Watch Reel</span>
+            </div>
           </div>
           <div className="highlight-card">
             <div className="highlight-icon">
@@ -157,107 +156,17 @@ const Home = (props) => {
                 strokeLinejoin="round"
                 strokeWidth="2"
               >
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                >
-                  <path d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
-                  <circle cx="12" cy="8" r="6"></circle>
-                </g>
+                <path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
               </svg>
             </div>
-            <h3 className="highlight-title">UN Global Goal Award</h3>
+            <h3 className="highlight-title">NGO Partnership Leader</h3>
             <p className="section-content">
-              Recognized for outstanding contribution to Quality Education and
-              Decent Work (SDG 4 &amp; 8).
-            </p>
-            <a href="#">
-              <div className="btn-link">
-                <span>View Award</span>
-              </div>
-            </a>
-          </div>
-          <div className="highlight-card">
-            <div className="highlight-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              >
-                <path d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path>
-              </svg>
-            </div>
-            <h3 className="highlight-title">Economic Policy Board</h3>
-            <p className="section-content">
-              Appointed as a special advisor on Creative Economy for the
-              Pan-African Trade Council.
+              Built strategic collaborations with global NGOs to scale digital
+              inclusion programs across 10+ countries.
             </p>
             <a href="#">
               <div className="btn-link">
                 <span>Learn More</span>
-              </div>
-            </a>
-          </div>
-          <div className="highlight-card">
-            <div className="highlight-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              >
-                <path d="M5 12h14m-7-7l7 7l-7 7"></path>
-              </svg>
-            </div>
-            <h3 className="highlight-title">Top 40 Under 40</h3>
-            <p className="section-content">
-              Named among the most influential social entrepreneurs reshaping
-              the media landscape.
-            </p>
-            <a href="#">
-              <div className="btn-link">
-                <span>Press Release</span>
-              </div>
-            </a>
-          </div>
-          <div className="highlight-card">
-            <div className="highlight-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              >
-                <path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              </svg>
-            </div>
-            <h3 className="highlight-title">TEDx Keynote Speaker</h3>
-            <p className="section-content">
-              Delivered &apos;The Currency of Connection&apos; talk, reaching
-              over 1 million viewers globally.
-            </p>
-            <a href="#">
-              <div className="btn-link">
-                <span>Watch Talk</span>
               </div>
             </a>
           </div>
@@ -273,21 +182,17 @@ const Home = (props) => {
               <p className="section-content">
                 My mission is to bridge the gap between media storytelling and
                 social action. By leveraging broadcast platforms and grassroots
-                entrepreneurship, we create ecosystems where talent meets
+                entrepreneurship, creating ecosystems where talent meets
                 opportunity and narratives drive policy change.
               </p>
               <div className="impact-stats">
                 <div className="stat-item">
-                  <span className="stat-number">10M+</span>
+                  <span className="stat-number">1M+</span>
                   <span className="stat-label">Global Reach</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">50+</span>
+                  <span className="stat-number">4+</span>
                   <span className="stat-label">Ventures Mentored</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">$2M+</span>
-                  <span className="stat-label">Impact Capital</span>
                 </div>
               </div>
             </div>
@@ -308,8 +213,8 @@ const Home = (props) => {
               </div>
               <div className="bento-side-image">
                 <img
-                  src="https://images.pexels.com/photos/8845956/pexels-photo-8845956.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Action Shot"
+                  src={Ppecu}
+                  alt="Ataneh Peculiar in Action"
                 />
               </div>
             </div>
@@ -318,72 +223,51 @@ const Home = (props) => {
       </section>
       <section id="latest" className="latest-updates">
         <div className="latest-updates-header">
-          <h2 className="section-title">The Pulse</h2>
+          <h2 className="section-title">Talk with Pecs</h2>
           <p className="section-subtitle">
-            Real-time dispatches from the field and studio.
+            Conversations that explore culture, creativity, and impact.
           </p>
         </div>
         <div className="update-rail">
           <div className="update-card">
             <div className="update-tag">
-              <span>Broadcasting</span>
+              <span>Community</span>
             </div>
-            <h3 className="update-title">
-              Behind the Scenes: New Series on Social Tech
-            </h3>
+            <h3 className="update-title">Stories from the Ground</h3>
             <p className="section-content">
-              Exploring how blockchain is revolutionizing community funding in
-              Africa.
+              Real voices and experiences shaping change in local communities.
             </p>
-            <span className="update-date">Oct 12, 2025</span>
+            <span className="update-date">Episode 12</span>
           </div>
           <div className="update-card">
             <div className="update-tag">
-              <span>Impact</span>
+              <span>Innovation</span>
             </div>
-            <h3 className="update-title">
-              VistaVanguard Cohort 4 Applications Open
-            </h3>
+            <h3 className="update-title">Tech for Good</h3>
             <p className="section-content">
-              Calling all social entrepreneurs ready to scale their digital
-              presence.
+              Conversations on tools and ideas that move social impact forward.
             </p>
-            <span className="update-date">Oct 08, 2025</span>
+            <span className="update-date">Episode 09</span>
           </div>
           <div className="update-card">
             <div className="update-tag">
-              <span>Speaking</span>
+              <span>Leadership</span>
             </div>
-            <h3 className="update-title">
-              Keynote: World Economic Forum Regional Summit
-            </h3>
+            <h3 className="update-title">Leading with Purpose</h3>
             <p className="section-content">
-              Discussing the role of media in post-digital economic recovery.
+              Insights on how to build teams and movements that last.
             </p>
-            <span className="update-date">Sep 28, 2025</span>
+            <span className="update-date">Episode 06</span>
           </div>
           <div className="update-card">
             <div className="update-tag">
-              <span>Media</span>
+              <span>Culture</span>
             </div>
-            <h3 className="update-title">
-              Featured Interview with Forbes Africa
-            </h3>
+            <h3 className="update-title">Creativity in Motion</h3>
             <p className="section-content">
-              A deep dive into the intersection of personal branding and social
-              utility.
+              Exploring the power of storytelling to shift perspectives.
             </p>
-            <span className="update-date">Sep 15, 2025</span>
-          </div>
-          <div className="update-card">
-            <div className="update-tag">
-              <span>Award</span>
-            </div>
-            <h3 className="update-title">Top 100 Influential Leaders 2025</h3>
-            <p className="section-content">
-              Honored to be included in the annual list of media change-makers.
-            </p>
-            <span className="update-date">Sep 01, 2025</span>
+            <span className="update-date">Episode 03</span>
           </div>
         </div>
       </section>
@@ -687,35 +571,22 @@ const Home = (props) => {
 </script>`}
           ></Script>
         </div>
-      </div>
-      <Footer></Footer>
-      <a href="https://play.teleporthq.io/signup">
-        <div aria-label="Sign up to TeleportHQ" className="home-container4">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 19 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="home-icon33"
-          >
-            <path
-              d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
-              fill="#B23ADE"
-            ></path>
-            <path
-              d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
-              fill="#FF5C5C"
-            ></path>
-            <path
-              d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
-              fill="#2874DE"
-            ></path>
-          </svg>
-          <span className="home-text27">Built in TeleportHQ</span>
-        </div>
-      </a>
+     
+    <Footer></Footer>
     </div>
+    {showVideo && (
+      <div className="video-modal">
+        <div className="video-overlay" onClick={() => setShowVideo(false)}></div>
+        <div className="video-content">
+          <video controls src="/reel.mp4" className="custom-video"></video>
+          <button className="close-btn" onClick={() => setShowVideo(false)}>×</button>
+        </div>
+      </div>
+    )}
+    </div>
+          
+            
+           
   )
 }
 

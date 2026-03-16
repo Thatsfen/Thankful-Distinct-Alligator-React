@@ -25,7 +25,7 @@ const Navigation = (props) => {
       <nav className="navigation-container">
         <div className="navigation-desktop-wrapper">
           <div className="navigation-links-left">
-            <Link to="/">
+            <Link to="/about">
               <div className="navigation-link">
                 <span>About</span>
               </div>
@@ -38,7 +38,7 @@ const Navigation = (props) => {
           </div>
           <Link to="/">
             <div className="navigation-logo-center">
-              <span className="section-title">DestinyVista</span>
+              <span className="section-title">Ataneh Peculiar</span>
             </div>
           </Link>
           <div className="navigation-links-right">
@@ -81,7 +81,7 @@ const Navigation = (props) => {
         <div className="navigation-overlay-header">
           <Link to="/">
             <div className="navigation-logo-center">
-              <span className="section-title">DestinyVista</span>
+              <span className="section-title">Ataneh Peculiar</span>
             </div>
           </Link>
           <button
@@ -108,7 +108,7 @@ const Navigation = (props) => {
         </div>
         <div className="navigation-overlay-content">
           <div className="navigation-overlay-links">
-            <Link to="/">
+            <Link to="/about">
               <div className="navigation-overlay-link">
                 <span>About</span>
               </div>
